@@ -10,7 +10,7 @@
         <% if @prototype.user_id == current_user.id %>
         <div class="prototype__manage">
           <%= link_to "編集する", edit_prototype_path(@prototype), class: :prototype__btn %>
-          <%= link_to "削除する", prototype_path, data: {turbo_method: "delete"}, class: :prototype__btn %>
+          <%= link_to "削除する", prototype_path(@prototype), data: {turbo_method: "delete"}, class: :prototype__btn %>
         </div>
         <% end %>
       <% end %>
